@@ -1,4 +1,9 @@
 """
+import os
+t = os.getenv("DISCORD_TOKEN")
+print("[boot] has DISCORD_TOKEN key? ", "DISCORD_TOKEN" in os.environ)
+print("[boot] token length:       ", 0 if not t else len(t))
+print("[boot] token preview:      ", (t[:8] + "...") if t else "NONE")
 NFL Survivor Bot (Railway-ready)
 - Buttons only for players (Join, Make Pick, Standings, This Week's Picks, My Past Picks)
 - Auto-post weekly panel (Tuesday 12:00 PM ET)
